@@ -4,16 +4,19 @@ $colorline: #c8a98e;
 html{
 	font-size: 10px;
 }
-// html{
-// 	width: 32em;
-// 	height: 56.8em;
-// 	overflow: hidden;
-// }
-// body{
-// 	width: 32rem;
-// 	height: 56.8rem;
-// 	overflow: hidden;
-// }
+html{
+	position:relative;
+	width: 32em;
+	height: 56.8em;
+	-webkit-tap-highlight-color: rgba(255,255,255,0);
+	// overflow: hidden;
+}
+body{
+	position:relative;
+	width: 32rem;
+	height: 56.8rem;
+	// overflow: hidden;
+}
 
 @import "@keyframes";
 @import "swiper";

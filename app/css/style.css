@@ -88,6 +88,19 @@ html {
   font-size: 10px;
 }
 
+html {
+  position: relative;
+  width: 32em;
+  height: 56.8em;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+body {
+  position: relative;
+  width: 32rem;
+  height: 56.8rem;
+}
+
 @-webkit-keyframes recommend {
   from {
     -webkit-transform: translate(0);
@@ -533,8 +546,9 @@ button.swiper-pagination-bullet {
 }
 
 .container {
-  width: 96rem;
-  height: 113.6rem;
+  position: relative;
+  width: 300%;
+  height: 300%;
   background-color: #333;
 }
 
@@ -727,6 +741,18 @@ button.swiper-pagination-bullet {
   font-family: 'STXingkai','SimSun','STHeiti';
 }
 
+.return {
+  position: absolute;
+  top: .5rem;
+  left: 1rem;
+  width: 5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border: .1rem solid #e5bc55;
+  font-size: 1.35rem;
+  border-radius: 2.5rem 0.5rem 0.5rem 2.5rem/2.5rem 0.5rem 0.5rem 2.5rem;
+}
+
 .menu-section {
   position: relative;
   width: 32rem;
@@ -748,18 +774,18 @@ button.swiper-pagination-bullet {
 }
 
 .type {
-  width: 9.7rem;
+  width: 8.2rem;
 }
 
 .type-name {
-  width: 21.5rem;
+  width: 23rem;
   box-shadow: -0.1rem 0.3rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
 .menu-aside {
   display: inline-block;
   float: left;
-  width: 10rem;
+  width: 8.5rem;
   height: 42rem;
   padding-top: 1rem;
   background-color: rgba(0, 0, 0, 0.05);
@@ -768,7 +794,7 @@ button.swiper-pagination-bullet {
 .menu-aside nav {
   margin-bottom: 1rem;
   margin-left: 1rem;
-  width: 8.4rem;
+  width: 6.9rem;
   height: 4rem;
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -783,7 +809,7 @@ button.swiper-pagination-bullet {
 
 .menu-list {
   display: inline-block;
-  width: 22rem;
+  width: 23.5rem;
   height: 42rem;
   padding-top: 1rem;
   overflow: hidden;
@@ -796,7 +822,7 @@ button.swiper-pagination-bullet {
 }
 
 .menu-list li {
-  width: 20rem;
+  width: 21.5rem;
   height: 8rem;
   margin-bottom: .5rem;
   margin-left: 1rem;
@@ -812,6 +838,11 @@ button.swiper-pagination-bullet {
   border: 0.2rem solid rgba(240, 240, 240, 0.5);
 }
 
+.meal-img img {
+  width: 7rem;
+  height: 7rem;
+}
+
 .meal-name, .meal-price, .number {
   display: inline-block;
   margin-left: 2rem;
@@ -819,7 +850,7 @@ button.swiper-pagination-bullet {
 }
 
 .meal-name {
-  width: 9.5rem;
+  width: 11rem;
   height: 2.5rem;
   color: rgba(240, 240, 240, 0.5);
   font-size: 1.7rem;
@@ -829,7 +860,7 @@ button.swiper-pagination-bullet {
 }
 
 .meal-price {
-  width: 9.5rem;
+  width: 11rem;
   height: 2rem;
   color: rgba(240, 240, 240, 0.5);
   font-size: 1.5rem;
@@ -841,7 +872,7 @@ button.swiper-pagination-bullet {
 }
 
 .number {
-  width: 9.5rem;
+  width: 11rem;
   height: 3rem;
   margin-top: .5rem;
   color: rgba(240, 240, 240, 0.5);
@@ -881,7 +912,7 @@ button.swiper-pagination-bullet {
 }
 
 .menu-num {
-  width: 9.8rem;
+  width: 8.3rem;
   height: 4.1rem;
   border-right: 0.15rem solid rgba(0, 0, 0, 0.1);
   font-size: 2rem;
@@ -891,7 +922,8 @@ button.swiper-pagination-bullet {
 
 .menu-money {
   margin-top: .5rem;
-  width: 15rem;
+  margin-left: .5rem;
+  width: 16rem;
   height: 4.1rem;
   font-size: 3rem;
 }

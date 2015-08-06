@@ -1,14 +1,16 @@
 require.config({
 	// Alwats make main.js the baseUrl
 	paths: {
-		jquery: './jquery.min',
-		swiper: './swiper',
-		homepage: './homepage',
+		jquery: '../src/jquery.min',
+		swiper: '../src/swiper',
+		button: './button',
+		data: './data',
+		show: './show',
 	}
 });
 
 // Start the main app logic
-require(['jquery', 'swiper'], function($, swiper) {
+require(['jquery', 'swiper', 'button', 'data', 'show'], function($, swiper, button, data, show) {
 	$(document).ready(function() {
 		var mySwiper = new Swiper('.swiper-container', {
 			direction: 'horizontal',
@@ -19,4 +21,7 @@ require(['jquery', 'swiper'], function($, swiper) {
 			prevButton: '.swiper-button-prev',
 		});
 	});
+
+	button.switchPage();
+	button.numControl();
 });
