@@ -4,22 +4,22 @@
 		"name": "推荐0",
 		"Dish": [{
 			"id": 0,
-			"name": "榴莲焖鸡0",
-			"price": 35,
+			"name": "榴莲焖鸡啊啊啊",
+			"price": 35.50,
 			"num":0,
 			"img": "../imgs/homepage-body.png",
 			"description": "榴莲焖鸡，喝完啪啪啪"
 		}, {
 			"id": 1,
 			"name": "榴莲焖鸡1",
-			"price": 35,
+			"price": 35.00,
 			"num":0,
 			"img": "../imgs/homepage-body.png",
 			"description": "榴莲焖鸡，喝完啪啪啪"
 		}, {
 			"id": 2,
 			"name": "榴莲焖鸡2",
-			"price": 35,
+			"price": 35.00,
 			"num":0,
 			"img": "../imgs/homepage-body.png",
 			"description": "榴莲焖鸡，喝完啪啪啪"
@@ -30,7 +30,7 @@
 		"Dish": [{
 			"id": 3,
 			"name": "榴莲焖鸡3",
-			"price": 35,
+			"price": 35.00,
 			"num":0,
 			"img": "../imgs/homepage-body.png",
 			"description": "榴莲焖鸡，喝完啪啪啪"
@@ -41,7 +41,7 @@
 		"Dish": [{
 			"id": 4,
 			"name": "榴莲焖鸡4",
-			"price": 35,
+			"price": 35.00,
 			"num":0,
 			"img": "../imgs/homepage-body.png",
 			"description": "榴莲焖鸡，喝完啪啪啪"
@@ -52,7 +52,7 @@
 		"Dish": [{
 			"id": 5,
 			"name": "榴莲焖鸡5",
-			"price": 35,
+			"price": 35.00,
 			"num":0,
 			"img": "../imgs/homepage-body.png",
 			"description": "榴莲焖鸡，喝完啪啪啪"

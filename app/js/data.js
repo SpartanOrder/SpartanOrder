@@ -34,8 +34,8 @@ define(['jquery'], function($) {
 			if (DishType[i].id === DishTypeId) {
 				return DishType[i];
 			}
-			return null;
 		}
+		return null;
 	};
 
 	/**
