@@ -1,2 +1,0 @@
-# SpartanOrder
-Up!Up!Up!!
