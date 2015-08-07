@@ -1,0 +1,169 @@
+.homepage{
+	position: relative;
+	width: 32rem;
+	height: 56.8rem;
+	background:url('../imgs/homepage-bg.png') no-repeat;
+	background-size: 32rem 56.8rem;
+}
+
+.homepage-header{
+	width: 32rem;
+	height: 4.25rem;
+	background-color: rgba(144,125,108,.2);
+	border-bottom: 1px solid $colorline;
+	color:white;
+	text-align: center;
+	line-height: 4rem;
+	font:{
+		size:2rem;
+		family:'STXingkai','SimSun','STHeiti';
+		weight:600;
+	}
+}
+
+.homepage-section{
+	width: 32rem;
+	height: 49rem;
+
+	@at-root .swiper-container {
+    width: 32rem;
+    height: 20rem;
+	}  
+
+	@at-root .homepage-body{
+		position: relative;
+		width: 32rem;
+		height: 28rem;
+		padding-top:1.5rem;
+		// background:url('../imgs/homepage-body.png') -16rem no-repeat;
+		// background-size: 64rem 45rem;
+
+		@at-root .menu-button{
+			display: inline-block;
+			float: left;
+			width: 11rem;
+			height: 11rem;
+			margin-left: 2rem;
+			margin-top: 3rem;
+			margin-right: 4rem;
+			border-radius: 50%;
+			border-left: .2rem solid #3b3637;
+			border-right: .2rem solid #d26b4a;
+			background:url('../imgs/icon.png') 2.8rem -.5rem no-repeat;
+			background-size: 7rem 56rem;
+			text-align: center;
+			line-height: 19.5rem;
+			color: orange;
+			font-size: 1.8rem;
+		}
+
+		@at-root .other-botton{
+			display: inline-block;
+			width: 13rem;
+			height: 18rem;
+
+			div{
+				position: relative;
+				width: 11rem;
+				height: 4rem;
+				margin-bottom: 2rem;
+				border-left: .1rem solid $colorline;
+				color: orange;
+				font-size: 1.55rem;
+				line-height: 4rem;
+				text-align: right;
+
+				@at-root .button-img{
+					position: absolute;
+					top:-.5rem;
+					left: 2rem;
+					width: 5rem;
+					height: 5rem;
+					border-radius: 50%;
+				}
+				
+				@at-root .log_in-button .button-img{
+					border-left: .2rem solid #d26b4a;
+					border-right: .2rem solid $colorline;
+					background:url('../imgs/icon.png') .2rem -8.5rem no-repeat;
+					background-size: 6rem 48rem;
+				}
+
+				@at-root .bill-button .button-img{
+					border-top: .2rem solid #d26b4a;
+					border-bottom: .2rem solid $colorline;
+					background:url('../imgs/icon.png') -.3rem -18.5rem no-repeat;
+					background-size: 6rem 48rem;
+				}
+
+				@at-root .call-button .button-img{
+					border-right: .2rem solid #d26b4a;
+					border-left: .2rem solid $colorline;
+					background:url('../imgs/icon.png') -.3rem -14.5rem no-repeat;
+					background-size: 6rem 48rem;
+				}
+			}
+		}
+
+		@at-root .daily-recommend{
+			width: 32rem;
+			height: 2rem;
+			padding-top: .5rem;
+			border-top: .4rem solid rgba(0,0,0,.1);
+			color: orange;
+			white-space: nowrap;
+			overflow: hidden;
+			font-size: 1.75rem;
+			line-height: 1.75rem;
+
+			@at-root .recommend{
+				display: inline-block;
+				overflow: hidden;
+				white-space: nowrap;
+				width: 25rem;
+				span{
+					display: inline-block;
+					width: 50rem;
+				 	animation:recommend 15s linear normal both infinite;
+				}
+			}
+		}
+
+		@at-root .message{
+			margin-top: .5rem;
+			padding-top: .5rem;
+			padding-left: 13.5rem;
+			width: 18.5rem;
+			height: 5.5rem;
+			background-color: rgba(255,165,0,.1);
+			text-align: left;
+			line-height: 2rem;
+			color: orange;
+			
+			@at-root .message-button{
+				width: 4rem;
+				height: 4rem;
+				border-radius: 50%;
+				border-left: .2rem solid #d26b4a;
+				border-right: .2rem solid $colorline;
+				background:url('../imgs/icon.png') -.3rem -20rem no-repeat;
+				background-size: 5rem 40rem;
+			}
+		}	
+	}
+}
+
+.homepage-footer{
+	width: 32rem;
+	height: 3.45rem;
+	padding-left: 2rem;
+
+	@at-root .aboutus{
+		width: 28rem;
+		border-top: .2rem solid rgba(0,0,0,.1);
+		color: $colorline;
+		text-align: center;
+		line-height: 3rem;
+		font-size: 1.35rem;
+	}
+}

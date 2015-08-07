@@ -1,0 +1,83 @@
+.order{
+	position: absolute;
+	top: 0;
+	left: 64rem;
+	width: 32rem;
+	height: 56.8rem;
+	color:#e5bc55;
+	background:url('../imgs/homepage-bg.png') no-repeat;
+	background-size: 32rem 56.8rem;
+}
+
+.order-header{
+	width: 32rem;
+	height: 4.25rem;
+	border-bottom: .1rem solid $colorline;
+	text-align: center;
+	line-height: 4.25rem;
+	font:{
+		size:2.25rem;
+		family:'STXingkai','SimSun','STHeiti';
+	}
+}
+
+.order-section{
+	position: relative;
+	width: 32rem;
+	height: 47rem;
+	
+	@at-root .order-section-head{
+		width: 32rem;
+		height: 4rem;
+		background-color: rgba(255,165,0,.1);
+		line-height: 4rem;
+		text-indent: 1rem;
+		font:{
+		size:2rem;
+		family:'STXingkai','SimSun','STHeiti';
+		}
+	}
+
+	@at-root .order-body{
+		width: 32rem;
+		height: 43rem;
+
+		@at-root .order-list{
+			width: 32rem;
+			height: 100%;
+
+			li{
+				padding-left: 1rem;
+				width: 31rem;
+				height: 4rem;
+				border-bottom: .1rem solid rgba(0,0,0,.1);
+				line-height: 4rem;
+				font-size: 1.75rem;
+
+				p{
+					display: inline-block;
+				}
+
+				@at-root .order-name{
+					width: 11rem;
+				}
+
+				@at-root .order-price{
+					width: 10rem;
+				}
+
+				@at-root .order-number{
+					float: right;
+					padding-top: .5rem;
+					width: 8rem;
+					height: 4rem;
+					.num{
+						color: rgba(240,240,240,.5);
+						height: 4rem;
+						font-size: 2rem;
+					}
+				}
+			}
+		}
+	}
+}
