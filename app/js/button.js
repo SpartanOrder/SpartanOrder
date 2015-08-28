@@ -27,6 +27,11 @@ define(['show', 'data'], function(show, data) {
 		$('.menu-return').click(function() {
 			containTrans(0, 0, 0);
 		});
+		$('.menu-sure').click(function() {
+			$('.menu-cover').hide();
+			containTrans(-64, 0, 0);
+			alert('页面有待完善');
+		});
 		$('.order-return').click(function() {
 			show.showDishType();
 			$('.menu-aside nav:first').addClass('navclick');

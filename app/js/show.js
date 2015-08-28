@@ -1,15 +1,5 @@
 define(['jquery', 'data'], function($, data) {
 	var DishType = data.getDishType();
-
-
-	elem_1.addEventListener('click',function(){
-		animation(elem_2,'left',0,100);
-	});
-
-
-
-
-
 	/**
 	 * 展示菜单类别列表
 	 * @return {none} 

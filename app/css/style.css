@@ -93,12 +93,14 @@ html {
   width: 32em;
   height: 56.8em;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  overflow: hidden;
 }
 
 body {
   position: relative;
   width: 32rem;
   height: 56.8rem;
+  overflow: hidden;
 }
 
 @-webkit-keyframes recommend {
@@ -556,7 +558,6 @@ button.swiper-pagination-bullet {
   position: relative;
   width: 32rem;
   height: 56.8rem;
-  background: url("../imgs/homepage-bg.png") no-repeat;
   background-size: 32rem 56.8rem;
 }
 
@@ -726,7 +727,6 @@ button.swiper-pagination-bullet {
   top: 0;
   width: 32rem;
   height: 56.8rem;
-  background: url("../imgs/homepage-bg.png") left top no-repeat;
   background-size: 32rem 56.8rem;
 }
 
@@ -1061,7 +1061,6 @@ button.swiper-pagination-bullet {
   width: 32rem;
   height: 56.8rem;
   color: #e5bc55;
-  background: url("../imgs/homepage-bg.png") no-repeat;
   background-size: 32rem 56.8rem;
 }
 
