@@ -1,8 +1,8 @@
 require.config({
 	// Alwats make main.js the baseUrl
 	paths: {
-		jquery: '../src/jquery.min',
-		swiper: '../src/swiper',
+		jquery: '../../src/jquery.min',
+		swiper: '../../src/swiper',
 		button: './button',
 		data: './data',
 		show: './show',
