@@ -8,7 +8,7 @@ define(['jquery'], function($) {
 	 * @return {none}    
 	 */
 	$.ajax({
-		url: '../../data/data.json',
+		url: 'http://spartanorder.github.io/app/data/data.json',
 		async: false,
 		dataType: 'json',
 		success: function(data) {
