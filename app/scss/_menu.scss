@@ -4,7 +4,7 @@
 	top: 0;
 	width: 32rem;
 	height: 56.8rem;
-	background:url('../imgs/homepage-bg.png') left top no-repeat;
+	// background:url('../imgs/homepage-bg.png') left top no-repeat;
 	background-size: 32rem 56.8rem;
 }
 
@@ -31,6 +31,25 @@
 		border: .1rem solid #e5bc55;
 		font-size: 1.35rem;
 		border-radius: 2.5rem .5rem .5rem 2.5rem/2.5rem .5rem .5rem 2.5rem;
+	}
+
+	@at-root .search{
+		position: absolute;
+		top: .5rem;
+		right: 0;
+		width: 20rem;
+		height: 3.25rem;
+		// background-color: red;
+	}
+
+	@at-root .search-button1,.search-button2{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 5rem;
+		height: 3.25rem;
+		background:url('../imgs/icon.png') left -37.5rem no-repeat;
+		background-size: 6rem 48rem;
 	}
 }
 
@@ -221,4 +240,101 @@
 		color: rgba(240,240,240,.5);
 		text-align: center;
 	}
+}
+
+.menu-cover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32rem;
+	height: 56.8rem;
+	background-color: rgba(0,0,0,.2);
+	color: #e5bc55;
+	text-align: center;
+	font-size: 2.5rem;
+	line-height: 5rem;
+
+	@at-root .personal{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -18rem 0 0 -12rem;
+		width: 26rem;
+		height: 36rem;
+		border-radius: 2rem;
+		background-color:rgba(51,51,51,.9);
+
+
+		@at-root .personal-list{
+			position: absolute;
+			top: 5rem;
+			left: 0;
+			width: 26rem;
+			height: 26rem;
+			background-color: rgba(235,228,221,.5);
+
+			ul{
+				width: 26rem;
+				height: 100%;
+				color:  rgba(240,240,240,.5);
+				font-size: 1.7rem;
+				overflow: auto;
+
+				li{
+					width: 26rem;
+					height: 4rem;
+					border-bottom:.2rem solid rgba(0,0,0,.1);
+					text-align: center;
+					line-height: 4rem;
+					span{
+						display: inline-block;
+						height: 4rem;
+						float: left;
+						overflow: hidden;
+					}
+
+					@at-root .meallist-name{
+						width: 11rem;
+					}
+
+					@at-root .meallist-price{
+						width: 10rem;
+					}
+
+					@at-root .meallist-num{
+						width: 4rem;
+						text-align: right;
+					}
+				}
+			}
+
+		}
+
+		.menu-money{
+			position: absolute;
+			left: 1rem;
+			bottom: 0;
+			text-align: left;
+			line-height: 3rem;
+		}
+
+		@at-root .menu-sure{
+			position: absolute;
+			right: 1rem;
+			bottom:0;
+			width: 6rem;
+			height: 5rem;
+		}
+
+		@at-root .menu-close{
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 5rem;
+			height: 5rem;
+			background:url('../imgs/icon.png') 0 -32.2rem no-repeat;
+			background-size: 6rem 48rem;
+		}
+	}
+
 }

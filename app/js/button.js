@@ -27,8 +27,10 @@ define(['show', 'data'], function(show, data) {
 		$('.menu-return').click(function() {
 			containTrans(0, 0, 0);
 		});
-		$('.menu-confirm').click(function() {
+		$('.menu-sure').click(function() {
+			$('.menu-cover').hide();
 			containTrans(-64, 0, 0);
+			alert('页面有待完善');
 		});
 		$('.order-return').click(function() {
 			show.showDishType();
@@ -85,7 +87,6 @@ define(['show', 'data'], function(show, data) {
 		var Dish = getDishByLi(ele);
 		var num = Number($('.menu-footer .menu-num span').html()) + 1;
 		var price = Number($('.menu-footer .menu-money span').html()) + Dish.price;
-		console.log(Dish.num);
 		if (Dish.num < 99) {
 			$('.menu-footer .menu-num span').html(num);
 			$('.menu-footer .menu-money span').html(price.toFixed(2));
@@ -132,7 +133,7 @@ define(['show', 'data'], function(show, data) {
 			$('.menu-footer .menu-money span').html(price.toFixed(2));
 		}
 	};
-	
+
 	/**
 	 * 绑定控制数量变化的按钮点击事件
 	 * @return {none} 
@@ -156,8 +157,24 @@ define(['show', 'data'], function(show, data) {
 		});
 	};
 
+
+	/**
+	 * 控制个人账单变化的按钮点击事件
+	 * @return {none} 
+	 */
+	var personalControl = function() {
+		$('.menu-confirm').click(function() {
+			show.showDishInMenu();
+			$('.menu-cover').show();
+		});
+		$('.menu-close').click(function() {
+			$('.menu-cover').hide();
+		});
+	};
+
 	return {
 		switchPage: switchPage,
 		numControl: numControl,
+		personalControl: personalControl,
 	};
 });

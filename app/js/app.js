@@ -24,4 +24,5 @@ require(['jquery', 'swiper', 'button', 'data', 'show'], function($, swiper, butt
 
 	button.switchPage();
 	button.numControl();
+	button.personalControl();
 });
