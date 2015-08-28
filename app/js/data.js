@@ -8,7 +8,7 @@ define(['jquery'], function($) {
 	 * @return {none}    
 	 */
 	$.ajax({
-		url: '../data/data.json',
+		url: '../../data/data.json',
 		async: false,
 		dataType: 'json',
 		success: function(data) {
